@@ -105,7 +105,7 @@ class VideoTab implements PlayerTab {
 
                       if (ReturnCode.isSuccess(returnCode)) {
                         ffprint(
-                            "Encode completed successfully in ${duration} milliseconds; playing video.");
+                            "Encode completed successfully in ${duration} milliseconds; output " + (File(videoFile.path).existsSync()?"exists;":"does not exist;")+ " playing video.");
                         this.playVideo();
                       } else {
                         showPopup(
