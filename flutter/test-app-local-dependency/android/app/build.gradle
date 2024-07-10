@@ -62,4 +62,8 @@ flutter {
 
 dependencies {
     testImplementation 'junit:junit:4.13.2'
+
+    // Needed for a local build of ffmpeg-kit.arr
+    implementation 'com.arthenica:smart-exception-java:0.2.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
 }
